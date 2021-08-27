@@ -82,9 +82,9 @@ if __name__ == "__main__":
     # starting thread 2
     t2.start()
     while True:
-        r = requests.post("http://127.0.0.1:8000", data={'temperature_value_c': 'x',
-            'temperature_value_f': 'y',
-         'light_value': 'z'})
+        r = requests.post("http://127.0.0.1:8000", data={'temperature_value_c': temperature_value_c,
+            'temperature_value_f': temperature_value_f,
+         'light_value': light_value})
         time.sleep(10)
 
     # both threads completely executed
