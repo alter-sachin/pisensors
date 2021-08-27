@@ -76,7 +76,7 @@ if __name__ == "__main__":
 # creating thread
     t1 = threading.Thread(target=temperature)
     t2 = threading.Thread(target=light_sensor)
-    t3= threading.Thread(target=send_values)
+    #t3= threading.Thread(target=send_values)
     # starting thread 1
     t1.start()
     # starting thread 2
